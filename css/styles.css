@@ -922,6 +922,9 @@ input[type="checkbox"]:checked+.terms .privacy-box {
    .address-link:focus {
        color: #404bbf;
    }
+        .btn-menu {
+            display: none;
+        }
 
         .hero-section {
             padding: 112px 0;
