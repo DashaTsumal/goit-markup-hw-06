@@ -153,7 +153,13 @@ p {
 .address-link:focus {
     color: #404bbf;
 }
-
+.btn-menu {
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
 .hero-section {
     background-color: #2e2f42;
     max-width: 1440px;
@@ -577,7 +583,6 @@ footer.footer-descr {
     gap: 24px;
 }
 
-.footer-form-label {}
 
 .footer-form-input {
     padding-left: 16px;
@@ -840,7 +845,7 @@ input[type="checkbox"]:checked+.terms .privacy-box {
 }
 
 /*Adaptation for Tablet*/
-@media screen and(min-width:768px;) {
+@media screen and(min-width: 768px) {
     
     .container{
         max-width: 768px;     
@@ -994,7 +999,7 @@ input[type="checkbox"]:checked+.terms .privacy-box {
 }
 
 
-@media screen and(min-width:1158px; ) {
+@media screen and(min-width:1158px ) {
 
     .container {
         max-width: 1158px;
