@@ -111,32 +111,13 @@ p {
     color: #404bbf;
 }
 
-.nav-link-psevdo {
-    position: relative;
-    color: #404bbf;
-}
-
-.nav-link-psevdo::after {
-    position: absolute;
-    display: block;
-    border-radius: 2px;
-    width: 48px;
-    height: 4px;
-    content: "";
-    background-color: #404bbf;
-    margin-top: 21px;
-}
 
 .address {
     font-style: normal;
-    margin-left: auto;
-}
-
-.adress-list {
+    margin-left: auto; 
     display: none;
-
-
 }
+
 
 .address-link {
 
@@ -604,7 +585,7 @@ footer.footer-descr {
 }
 
 .footer-social {
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     margin-right: 75px;
@@ -680,7 +661,7 @@ flex-direction: column;
 }
 
 .footer-form {
-    display: flex;
+    
    flex-wrap: wrap;
    gap: 16px;
 }
@@ -1063,6 +1044,22 @@ input[type="checkbox"]:checked+.terms .privacy-box {
             bottom: -6px;
     }
 
+.nav-link-psevdo {
+    position: relative;
+    color: #404bbf;
+}
+
+.nav-link-psevdo::after {
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    content: "";
+    background-color: #404bbf;
+    margin-top: 21px;
+}
+
    .address {
 
        display: block;
@@ -1078,7 +1075,7 @@ input[type="checkbox"]:checked+.terms .privacy-box {
 
    .address-link {
        font-size: 12px;
-       line-height: 1.17;
+       line-height: 1.16;
        letter-spacing: 0.02em;
        color: #434455;
        text-decoration: none;
@@ -1220,16 +1217,17 @@ input[type="checkbox"]:checked+.terms .privacy-box {
 
    
     .address-list {
-        
+   
         flex-direction: row;
         gap: 40px;
-        padding: 0;
+        
+    
     }
 
     .address-link {
         font-size: 16px;
-        line-height: 1.5;
-        
+            line-height: 1.5;
+            
     }
 
     .nav-link-psevdo::after{
@@ -1353,18 +1351,25 @@ input[type="checkbox"]:checked+.terms .privacy-box {
        padding-left: 15px;
        padding-right: 15px;
        flex-wrap: nowrap;
+       gap: unset;
     }
     .container-footer{
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-form-header{
         margin-left: auto;
     }
 
+    .footer-social{
+        margin: auto;
+    }
+
 .footer-form{
     flex-direction: row;
     gap: 24px;
+    flex-wrap: nowrap;
 }
 
 .footer-form-input{
