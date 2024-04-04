@@ -56,7 +56,7 @@ p {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .page-header {
@@ -249,7 +249,7 @@ p {
     margin: auto;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-section {
@@ -1016,6 +1016,13 @@ input[type="checkbox"]:checked+.terms .privacy-box {
     .container{
         max-width: 768px;     
     }
+  .btn-menu {
+      display: none;
+  }
+
+  .mod-menu{ 
+    display: none;
+  }
 
     .logo{ 
         margin-right: 120px;
@@ -1036,6 +1043,7 @@ input[type="checkbox"]:checked+.terms .privacy-box {
             display: block;
             padding: 24px 0;
             transition-property: color;
+            font-size: 16px;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -1043,6 +1051,7 @@ input[type="checkbox"]:checked+.terms .privacy-box {
     .nav-link:hover,
     .nav-link:focus{
         color: #404bbf;
+
     }
 
     .nav-link-psevdo{
@@ -1062,9 +1071,9 @@ input[type="checkbox"]:checked+.terms .privacy-box {
             bottom: -6px;
     }
 
-   address {
-       font-style: normal;
-       margin-left: auto;
+   .address {
+       
+       display: block;
    }
 
    
@@ -1072,12 +1081,12 @@ input[type="checkbox"]:checked+.terms .privacy-box {
        display: flex;
        flex-direction: column;
        gap: 12px;
-       padding: 16px 0;
+     
    }
 
    .address-link {
        font-size: 12px;
-       line-height: 1.5;
+       line-height: 1.17;
        letter-spacing: 0.02em;
        color: #434455;
        text-decoration: none;
@@ -1090,9 +1099,8 @@ input[type="checkbox"]:checked+.terms .privacy-box {
    .address-link:focus {
        color: #404bbf;
    }
-        .btn-menu {
-            display: none;
-        }
+  
+ 
 
         .hero-section {
             padding: 112px 0;
@@ -1100,9 +1108,18 @@ input[type="checkbox"]:checked+.terms .privacy-box {
             max-width: 1157px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(../images/main-tab.jpg);
-                padding: 112px 0;
+                    url(../images/people-office.jpg);
+               
         }
+@media screen and ( min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Dark-bg2x.jpg);
+    }
+}
 
     .hero-title {
                       font-size: 56px;
@@ -1113,17 +1130,10 @@ input[type="checkbox"]:checked+.terms .privacy-box {
                   
 
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-      .hero-section {
-          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                  rgba(46, 47, 66, 0.7)),
-              url(../images/Dark-bg2x.jpg);
-      }
-  }
 
                     .text-box{
+                        flex-direction: row;
+                        flex-wrap: wrap;
                     gap: 72px 24px;
                   }
                   .box-benefit{
@@ -1133,14 +1143,26 @@ input[type="checkbox"]:checked+.terms .privacy-box {
                     text-align: start;
                   }
 
+    .team-container{
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
                   .team{
                     gap: 64px 24px;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                   }
                   .our-team{
                     width: calc((100% - 24px) / 2);
                   }
+
                   .portfolio-list{
-                    gap: 72px 24px;
+       flex-direction: row;
+        flex-wrap: wrap;
+                    gap: 24px;
+                    row-gap: 72px;
+                    column-gap: 24px;
                   }
                   .portfolio-list-item{
                     max-width: 356px;
@@ -1149,42 +1171,43 @@ input[type="checkbox"]:checked+.terms .privacy-box {
       
                   }
 
-                  footer{
-                    display: flex;
+                  .footer-container{
+                    padding-left: 108px;
+                    padding-right: 108px;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    column-gap: 24px;
+                    row-gap: 72px;
                   }
 
-                  .footer{
-                    padding: 96px 0;
-                  }
-                  .container-footer{
-                 width: 584px;
-                  }
-                  contain-logo{
-                   margin-right: 24px;
-                   margin-bottom: 76px;
-                  }
-                  footer.logo{ 
-                    justify-content: flex-start;
-                  }
-                  .footer-descr{
-                    width: 264px;
-                  }
                   .footer-social{
-                    display: inline-block;
+                   align-items: flex-start;
                   }
-.footer-social-text{
-    text-align: start;
-}
-.footer-form-container{
-    display: block;
-}
 
-.footer-form-input{
-    width: 264px;}
+                  .footer-form-header{
+                    font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        letter-spacing: 0.02em;
+                        color: #fff;
+                        margin-bottom: 16px;
+                        text-align: start;
+                  }
 
 .footer-form{
     gap: 24px;
+    flex-direction: row;
 }
+.footer-form-input{
+    width: 264px;
+}
+.modal-content{
+    width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+}
+
 
 }
 
@@ -1211,6 +1234,7 @@ input[type="checkbox"]:checked+.terms .privacy-box {
 
     .address-link {
         font-size: 16px;
+        line-height: 1.5;
         
     }
 
@@ -1226,11 +1250,9 @@ input[type="checkbox"]:checked+.terms .privacy-box {
         max-width: 1440px;
     }
 
-    .hero-title {
-               margin-bottom: 48px;
-    }
+    
 
-        @media screen and (-webkit-min-device-pixel-ratio: 2),
+        @media screen and ( min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .hero-section {
@@ -1239,9 +1261,27 @@ input[type="checkbox"]:checked+.terms .privacy-box {
                     url(../images/Dark-bg2x.jpg);
             }
         }
+
+                .hero-title {
+                    font-size: 56px;
+                        line-height: 1.07;
+                        text-align: center;
+                        max-width: 496px;
+                }
+
+
+.hero-button{
+    margin: 48px auto 0 auto;
+}
+  
+
 .about-us{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.text-box{
+    gap: 24px;
 }
 
     .box-benefit {
@@ -1287,6 +1327,11 @@ input[type="checkbox"]:checked+.terms .privacy-box {
         flex-direction: row;
     }
 
+    .team-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .our-team {
     width: calc((100% - 96px) / 4);
     }
@@ -1308,31 +1353,29 @@ input[type="checkbox"]:checked+.terms .privacy-box {
 
     }
 
-    footer {
-        display: flex;
-    }
-
-    .footer {
-        padding: 100px 0;
-    }
+    
 
     .footer-container {
-        display: flex;
-        align-items: baseline;
-        width: 1140px;
+       padding-left: 15px;
+       padding-right: 15px;
+       flex-wrap: nowrap;
     }
     .container-footer{
-        margin: 0 120px 0 0;
+        margin-right: 120px;
     }
 
-
-    .footer-social {
-        margin: 0 80px 0 0;
+    .footer-form-header{
+        margin-left: auto;
     }
 
- 
+.footer-form{
+    flex-direction: row;
+    gap: 24px;
+}
 
-   .button-close{
-    margin-left: 336px;
-   }
+.footer-form-input{
+    width: 264px;
+}
+
+    
 }
