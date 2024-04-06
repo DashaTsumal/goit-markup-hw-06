@@ -42,7 +42,7 @@
                     <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
                 </svg>
             </button>
-<div class="mod-menu">
+ <div class="mod-menu">
     <div >
         <button class="mob-close-btn" type="button">
             <svg class="icon-btn" width="8" height="8">
@@ -105,7 +105,7 @@
             </li>
         </ul>
     </div>
-</div>
+</div> 
         </div>
     </header> 
     <main>
@@ -115,7 +115,9 @@
                 <h1 class="hero-titel">Effective Solutions for Your Business</h1>
                 <button class="hero-button" type="button">Order Service</button>
             </div>
-        </section> -->
+        </section>
+
+
         <section class="about-us">
             <div class="container">
                 <h2 class="visually-hidden">About us</h2>
@@ -135,7 +137,7 @@
                     <li class="box-benefit">
                         <div class="dignity-icon-container">
                             <svg class="dignity-icon" width="64" height="64">
-                                <use href="./images/icons.svg#icon-antenna"></use>
+                                <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
                         <h3 class="benefit-titel">Punctuality</h3>
@@ -167,12 +169,15 @@
                 </ul>
             </div>
         </section>
-         <section class="section-team">
+
+
+
+        <section class="section-team">
             <div class="container team-container">
                 <h2 class="section-titel">Our Team</h2>
                 <ul class="team">
                     <li class="our-team">
-                        <img src="./images/MarkGuerrero.jpg" alt="Mark Guerrero" width="264" />
+                        <img srcset="./images/Mark2x.jpg 2x, ./images/MarkGuerrero.jpg"  src="./images/MarkGuerrero.jpg" alt="Mark Guerrero" width="264" />
                         <div class="card-info">
                             <h3 class="person-name">Mark Guerrero</h3>
                             <p class="person-job">Product Designer</p>
@@ -209,7 +214,7 @@
                         </div>
                     </li>
                     <li class="our-team">
-                        <img src="./images/TomFord.jpg" alt="Tom Ford" width="264" />
+                        <img srcset="./images/Tom2x.jpg 2x, ./images/TomFord.jpg" src="./images/TomFord.jpg" alt="Tom Ford" width="264" />
                         <div class="card-info">
                             <h3 class="person-name">Tom Ford</h3>
                             <p class="person-job">Frontend Developer</p>
@@ -246,7 +251,7 @@
                         </div>
                     </li>
                     <li class="our-team">
-                        <img src="./images/CamilaGarcia.jpg" alt="Camila Garcia" width="264" />
+                        <img srcset="./images/Camila2x.jpg 2x, ./images/CamilaGarcia.jpg" src="./images/CamilaGarcia.jpg" alt="Camila Garcia" width="264" />
                         <div class="card-info">
                             <h3 class="person-name">Camila Garcia</h3>
                             <p class="person-job">Marketing</p>
@@ -283,7 +288,7 @@
                         </div>
                     </li>
                     <li class="our-team">
-                        <img src="./images/DanielWilson.jpg" alt="Daniel Wilson" width="264" />
+                        <img srcset="./images/Daniel2x.jpg, ./images/DanielWilson.jpg"  src="./images/DanielWilson.jpg" alt="Daniel Wilson" width="264" />
                         <div class="card-info">
                             <h3 class="person-name">Daniel Wilson</h3>
                             <p class="person-job">UI Designer</p>
@@ -322,13 +327,26 @@
                 </ul>
             </div>
         </section> 
-        <!--secnion portfolio-->
-        <section class="portfolio">
+        
+        
+       
+       <section class="portfolio">
             <div class="container">
                 <h2 class="portfolio-titel">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-list-item">
                         <div class="img-overlay">
+                            <picture>
+                                <source srcset=" ./images/app2x.jpg,
+                                                ./images/app.jpg
+                                                " media="(min-width: 1158px)" />
+                                <source srcset="  ./images/app2xtab.jpg,
+                                                  ./images/app1xtab.jpg
+                                                " media="(min-width: 768px)" />
+                                <source srcset="
+                                                  ./images/app2xmob.jpg 2x,
+                                                  ./images/app1xmob.jpg    1x
+                                                " media="(min-width: 320px)" />
                             <img src="./images/app.jpg" alt="view og the application bein created" width="360" />
                             <p class="overlay">
                             14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -346,6 +364,19 @@
 
                     <li class="portfolio-list-item">
                         <div class="img-overlay">
+                             <picture>
+                                <source srcset="
+                                                  ./images/code2x.jpg 2x,
+                                                ./images/code.jpg 1x
+                                                " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                ./images/code2xtab.jpg  2x,
+                                                  ./images/code1xtab.jpg 1x
+                                                " media="(min-width: 768px)" />
+                                <source srcset="
+                                                  ./images/code2xmob.jpg 2x,
+                                                  ./images/code1xtab.jpg    1x
+                                                " media="(min-width: 320px)" />
                            <img src="./images/code.jpg" alt="scan QR" width="360" />
 
                             <p class="overlay">
@@ -363,6 +394,19 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="img-overlay">
+                                <picture>
+                                    <source srcset="
+                                                   ./images/laptop2x.jpg 2x,
+                                                  ./images/laptop.jpg 1x
+                                                      " media="(min-width: 1158px)" />
+                                    <source srcset="
+                                                     ./images/laptop2xtab.jpg  2x,
+                                                     ./images/laptop1xtab.jpg 1x
+                                                                                " media="(min-width: 768px)" />
+                                    <source srcset="
+                                                    ./images/laptop2xmob.jpg 2x,
+                                                     ./images/laptop1xmob.jpg  1x
+                                                             " media="(min-width: 320px)" />
                                                     <img src="./images/laptop.jpg" alt="application on different devices" width="360" />
 
                             <p class="overlay">
@@ -380,7 +424,20 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="img-overlay">
-                                                    <img src="./images/car.jpg" alt="the driver is driving a car" width="360" />
+            <picture>
+                <source srcset="
+                                ./images/car2x.jpg 2x,
+                               ./images/car.jpg 1x
+                                " media="(min-width: 1158px)" />
+                <source srcset="
+                                 ./images/car2xtab.jpg  2x,
+                                ./images/car1xtab.jpg 1x
+                                 " media="(min-width: 768px)" />
+                <source srcset="
+                                ./images/car2xmob.jpg 2x,
+                                ./images/car1xmob.jpg  1x
+                                " media="(min-width: 320px)" />
+         <img src="./images/car.jpg" alt="the driver is driving a car" width="360" />
 
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -398,7 +455,20 @@
                     <li class="portfolio-list-item">
 
                         <div class="img-overlay">
-                                                    <img src="./images/phone.jpg" alt="illustration on the phone" width="360" />
+                            <picture>
+                                <source srcset="
+                                                 ./images/phone2x.jpg 2x,
+                                                ./images/phone.jpg 1x
+                                              " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/phone2xtab.jpg  2x,
+                                                 ./images/phone1xtab.jpg 1x
+                                                " media="(min-width: 768px)" />
+                                <source srcset="
+                                                  ./images/phone1xmob.jpg 2x,
+                                                 ./images/phone2xmob.jpg  1x
+                                               " media="(min-width: 320px)" />
+                               <img src="./images/phone.jpg" alt="illustration on the phone" width="360" />
 
                             <p class="overlay">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -415,6 +485,19 @@
                     </li>
                     <li class="portfolio-list-item">
                         <div class="img-overlay">
+                            <picture>
+                                <source srcset="
+                                                ./images/girl2x.jpg 2x,
+                                                ./images/girl.jpg 1x
+                                                " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                ./images/girl2xtab.jpg  2x,
+                                                ./images/girl1xtab.jpg 1x
+                                                 " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/girl2xmob.jpg 2x,
+                                                 ./images/girl1xtab.jpg  1x
+                                                 " media="(min-width: 320px)" />
                                             <img src="./images/girl.jpg" alt="happy user" width="360" />
             
                             <p class="overlay">
@@ -432,8 +515,9 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>  
     </main>
+    
      <footer class="footer">
         <div class="container footer-container">
             <div class="container-footer">
@@ -492,8 +576,10 @@
         </div>
     
     
-    </footer> 
- <!-- <div class="modal-backdrop is-open">
+    </footer>  
+
+
+  <!-- <div class="modal-backdrop is-open">
     <div class="modal-content">
         <button type="button" class="button-close">
             <svg class="modal-icon" width="8" height="8">
@@ -555,7 +641,7 @@
     </div>
             <button type="submit" class="modal-form-button">Send</button>
         </form>
-    </div> -->
+    </div>  -->
 </div>
 
 </body>
